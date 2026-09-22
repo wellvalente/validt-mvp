@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentoria | Área do aluno</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body data-page="area-ment" data-shell="app">
+  <div class="app-frame">
+    <div id="app-shell"></div>
+    <div>
+      <header class="app-top" id="app-top"></header>
+      <main id="conteudo" class="app-main">
+        <h1>Mentoria</h1>
+        <div class="tile" id="mentor-status">
+          <p class="kicker">Canal da mentoria</p>
+          <p>O WhatsApp só aparece depois do pagamento. Assine na página pública de mentoria para simular a liberação.</p>
+          <p><a class="btn btn-primary" href="../mentoria.html">Ver oferta de mentoria</a></p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script>
+    if (localStorage.getItem("validt_mentor")) {
+      document.getElementById("mentor-status").innerHTML = `
+        <p class="kicker">Assinatura ativa (mock)</p>
+        <h2>Canal liberado</h2>
+        <p>WhatsApp oficial aparece aqui após a confirmação do pagamento.</p>
+        <a class="btn btn-primary" href="#">Abrir canal (placeholder)</a>`;
+    }
+  </script>
+</body>
+</html>

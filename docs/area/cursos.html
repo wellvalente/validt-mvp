@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meus cursos | Validt</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body data-page="area-cursos" data-shell="app">
+  <div class="app-frame">
+    <div id="app-shell"></div>
+    <div>
+      <header class="app-top" id="app-top"></header>
+      <main id="conteudo" class="app-main">
+        <h1>Meus cursos</h1>
+        <div class="tabs">
+          <button class="tab active" data-tab="andamento" type="button">Em andamento</button>
+          <button class="tab" data-tab="nao" type="button">Não iniciados</button>
+          <button class="tab" data-tab="ok" type="button">Concluídos</button>
+          <button class="tab" data-tab="arc" type="button">Arquivados</button>
+        </div>
+        <div id="list-box"></div>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/pages.js"></script>
+</body>
+</html>

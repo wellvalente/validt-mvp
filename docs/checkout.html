@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | Validt</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="checkout">
+  <header id="site-header" class="site-header"></header>
+  <main id="conteudo" class="wrap">
+    <h1>Checkout</h1>
+    <div class="split">
+      <div class="form">
+        <p class="meta">Pagamento simulado. Não informe cartão real.</p>
+        <label>Nome no cartão<input placeholder="Nome" /></label>
+        <label>Número<input placeholder="**** **** **** 4242" /></label>
+        <label>PIX (alternativa)<input value="validt@mock" readonly /></label>
+        <button class="btn btn-primary" type="button" id="pay">Confirmar matrícula (mock)</button>
+      </div>
+      <aside class="tile" id="checkout-summary"></aside>
+    </div>
+  </main>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>
