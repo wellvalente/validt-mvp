@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursos | Validt</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="cursos">
+  <header id="site-header" class="site-header"></header>
+  <main id="conteudo" class="wrap">
+    <p class="crumb"><a href="index.html">Início</a> / Cursos</p>
+    <p class="kicker">Catálogo</p>
+    <div class="section-head">
+      <h1>Cursos da Validt</h1>
+      <div>
+        <span id="count" class="meta"></span>
+        <select id="sort">
+          <option value="relevantes">Mais relevantes</option>
+          <option value="preco">Menor preço</option>
+          <option value="horas">Mais horas</option>
+        </select>
+      </div>
+    </div>
+    <div class="catalog-layout">
+      <aside class="filters">
+        <label for="q">Buscar</label>
+        <input id="q" type="search" placeholder="Buscar por curso, tema ou professor..." />
+        <label for="cat">Categoria</label>
+        <select id="cat"></select>
+        <label for="level">Nível</label>
+        <select id="level">
+          <option value="todos">Todos</option>
+          <option>Iniciante</option>
+          <option>Intermediário</option>
+          <option>Avançado</option>
+        </select>
+        <label class="check"><input id="free" type="checkbox" /> Somente gratuitos</label>
+        <label class="check"><input id="cert" type="checkbox" /> Com certificado</label>
+        <button class="btn btn-outline" type="button" id="clear">Limpar filtros</button>
+      </aside>
+      <div class="course-grid" id="catalog"></div>
+    </div>
+  </main>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

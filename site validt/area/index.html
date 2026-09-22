@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel | Validt</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body data-page="area-home" data-shell="app">
+  <div class="app-frame">
+    <div id="app-shell"></div>
+    <div>
+      <header class="app-top" id="app-top"></header>
+      <main id="conteudo" class="app-main">
+        <p class="kicker">Bem-vindo</p>
+        <h1>Olá, aluno 👋</h1>
+        <p class="lead">Pronto para continuar sua evolução técnica?</p>
+        <div class="dash-grid">
+          <div class="stat-card"><span class="icon-brand">▤</span><div><div class="meta">Cursos matriculados</div><div class="n" id="stat-courses">0</div></div></div>
+          <div class="stat-card"><span class="icon-brand">✦</span><div><div class="meta">Certificados</div><div class="n" id="stat-certs">0</div></div></div>
+          <div class="stat-card"><span class="icon-brand">◷</span><div><div class="meta">Horas estudadas</div><div class="n" id="stat-hours">0.0h</div></div></div>
+          <div class="stat-card"><span class="icon-brand">↑</span><div><div class="meta">Sequência</div><div class="n">0 dias</div></div></div>
+        </div>
+        <div id="continue-courses" class="trio" style="margin-top:22px"></div>
+        <div class="empty-box" id="empty-courses" style="margin-top:22px">
+          <div class="empty-icon">▤</div>
+          <h2>Você ainda não tem cursos</h2>
+          <p>Explore nosso catálogo e comece agora sua evolução técnica.</p>
+          <a class="btn btn-primary" href="../cursos.html">Ver catálogo</a>
+        </div>
+        <section class="mentor-band" style="margin-top:28px">
+          <div>
+            <p class="kicker">Mentoria educacional</p>
+            <h2>Fale direto com o mentor</h2>
+            <p class="lead">Assine e receba orientação técnica e de carreira no canal da mentoria.</p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="../mentoria.html">Assinar mentoria</a>
+          </div>
+        </section>
+        <section class="section">
+          <p class="kicker">Disponíveis para compra</p>
+          <h2>Continue evoluindo com novos cursos</h2>
+          <p class="meta">Selecionados para o seu perfil profissional.</p>
+          <div class="course-grid" id="buy-grid" style="margin-top:16px"></div>
+          <p><a class="btn btn-outline" href="../cursos.html">Ver catálogo completo</a></p>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/layout.js"></script>
+  <script src="../assets/js/pages.js"></script>
+</body>
+</html>
