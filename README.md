@@ -2,6 +2,10 @@
 
 Mockup da plataforma **Validt Consultoria e Treinamentos**: site institucional + catálogo de cursos + área do aluno (simulado).
 
+## Site online (GitHub Pages)
+
+https://wellvalente.github.io/validt-mvp/
+
 ## Como rodar localmente
 
 ```bash
